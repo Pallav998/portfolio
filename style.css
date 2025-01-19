@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(6, 42, 42);
+  color: whitesmoke;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+
+.nav-sec {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(18, 39, 26);
+  position: fixed;
+}
+
+.nav-sec h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+.resumeBtn {
+  background-color: #00d498;
+  color: whitesmoke;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.burger-button {
+  display: none;
+  visibility: hidden;
+  font-size: 34px;
+  cursor: pointer;
+  position: absolute;
+  cursor: pointer;
+  top: 5%;
+  right: 5%;   
+  z-index: 999;
+}
+
+
+.hero_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height:auto;
+  padding: 20px;
+
+}
+
+.sub_section {
+  margin-top: 50px;
+  text-align: start;
+  padding: 10px;
+}
+
+.sub_section h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  
+}
+
+.sub_section h2 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.sub_section p {
+  margin: 20px 0;
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.btns {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.btns button {
+  background-color: #03a086;
+  color: whitesmoke;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btns button:hover {
+  background-color: #06dcca;
+}
+
+.about-section {
+  margin-top: 100px;
+  margin-left: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: auto;
+  width: 80%;
+  padding: 30px;
+  background-color: rgb(18, 27, 27);
+  border: 1px solid rgb(187, 248, 249);
+}
+
+.title {
+  font-size: 20px;
+  color: rgb(229, 229, 229);
+  background-color: #03a086;
+  padding: 10px;
+  text-align: center;
+  width: 220px;
+  margin-top: 40px;
+
+}
+
+.para {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 28px;
+  color: rgb(231, 229, 229);
+}
+
+.para i {
+  color: yellow;
+  padding: 10px;
+}
+
+.skills-section {
+  margin-top: 100px;
+  margin-left: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: auto;
+  width: 80%;
+  padding: 30px;
+  background-color: rgb(18, 27, 27);
+  border: 1px solid rgb(187, 248, 249);
+}
+
+.skillBox {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: stretch;
+  align-items: stretch;
+  row-gap: 50px;
+  padding-block: 40px;
+}
+
+.skill {
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  justify-self: center;
+  align-self: center;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+
+}
+
+.skill:hover {
+  scale: 1.5;
+  color: burlywood;
+
+}
+
+.certificate-section {
+  margin-top: 100px;
+  margin-left: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: auto;
+  width: 80%;
+  padding: 30px;
+  background-color: rgb(18, 27, 27);
+  border: 1px solid rgb(187, 248, 249);
+
+}
+
+.certificate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-section {
+  margin-top: 100px;
+  margin-left: 110px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 80%;
+  padding: 30px;
+  background-color: rgb(18, 27, 27);
+  border: 1px solid rgb(187, 248, 249);
+}
+
+.projectBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  align-items: stretch;
+  gap: 100px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.project a {
+  text-decoration: none;
+  color: white;
+}
+
+
+footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.social-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-logos i {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 18px;
+  transition: color 0.3s;
+}
+
+.social-logos i:hover {
+  color: #00bcd4;
+}
+
+footer hr {
+  margin: 20px 0;
+  border: 1px solid whitesmoke;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .active{
+      display: none;
+  }
+  
+  .nav-sec{
+      height: 60%;
+      flex-direction: column;
+  }
+  .logo{
+      position: absolute;
+      top: 8%;
+      left: 5%;
+  }
+  nav{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+  }
+  .burger-button{
+      display: inline;
+      visibility: visible;
+  }
+
+  
+
+  .hero_section,
+  .about-section,
+  .skills-section,
+  .certificate-section,
+  .project-section {
+      margin: 10px auto;
+      width: 90%;
+      padding: 20px;
+  }
+
+  .skillBox {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+  }
+
+  .projectBox {
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+
+  .hero_section {
+    width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+  }
+  .sub_section img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .sub_section {
+      padding: 10px;
+      text-align: center;
+  }
+
+  .btns {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+
+  .resumeBtn {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .certificate img{
+    width: 280px;
+    height: 250px;
+  }
+  footer {
+      text-align: center;
+  }
+
+  .footer-text {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .social-logos {
+      justify-content: center;
+  }
+}
